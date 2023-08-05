@@ -1,9 +1,9 @@
 
 :root {
-  --text-color: #F6F4EB; /* Replace #333 with your desired text color */
-  --bg-color: #6C3428;
+  --text-color: #FFF0F5; /* Replace #333 with your desired text color */
+  --bg-color: #FBA1B7;
    /* Replace #f0f0f0 with your desired background color */
-   --3rd-color:#DFA878;
+   --3rd-color:#FFD1DA;
 }
 *{
   margin:0;
