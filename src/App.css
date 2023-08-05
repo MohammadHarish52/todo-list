@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+
+:root {
+  --text-color: #F6F4EB; /* Replace #333 with your desired text color */
+  --bg-color: #6C3428;
+   /* Replace #f0f0f0 with your desired background color */
+   --3rd-color:#DFA878;
+}
+*{
+  margin:0;
+  padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.App{
+  display:flex;
+  background-color: var(--text-color);
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:0;
+  padding:0;
+  height:100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.todo-wrapper{
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height:auto;
+  width:55%;
+  background: var(--bg-color);
+  color:var(--text-color);
+  border-radius: 6px;
+  padding:20px 20px;
 }
+.todo-wrapper h1{
+  padding-bottom: 4px;
+}
+.Todoform{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  padding:4px;
+}
+.todo-input,.update-task{
+  outline:none;
+  border:1px solid var(--3rd-color);
+  background: none;
+  margin:4px 5px;
+  padding:4px 4px;
+  text-align: left;
+  border-radius: 4px;
+  height:24px;
+  width:75%;
+ 
+}
+.todo-input:hover , .todo-input:focus,.update-task:hover , .update-task:focus{
+  color:var(--bg-color);
+  background-color:var(--3rd-color) ;
+  border:none;
+}
+.todo-input::placeholder,.update-task::placeholder{
+  color: var(--3rd-color) ;/* Replace 'red' with the desired color */
+  font-weight:500;
+  padding: 2px 4px;
+}
+.todo-input::placeholder:focus,.update-task::placeholder:focus{
+  color:var(--bg-color);
+  font-weight: 500;
+}
+.todo-btn,.update-taskbtn{
+  outline:none; border:1px solid var(--text-color);
+  color:var(--bg-color);
+  padding:0 8px;
+  border-radius: 4px;
+  width:25%;
+ 
+}
+.todo-btn:hover,.update-taskbtn:hover{
+  color:var(--bg-color);
+  background-color: var(--3rd-color);
+  outline:none;
+  border:none;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.todo{
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  color:var(--bg-color);
+  background-color: var(--3rd-color);
+  height:36px;
+  margin:4px auto;
+  padding: 2px 5px;
+  border-radius: 4px;
+  width:95%;
+  text-align: left;
+  font-weight: 500;
+
+}
+.todo-icon{
+  padding:0  6px;
+}
+.todo-icon:hover{
+color: var(--text-color);
 }
